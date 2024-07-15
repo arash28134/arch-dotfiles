@@ -102,7 +102,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Aliases
-alias cpf='xclip -selection c <'
-alias vpn='sudo ./.config/scripts/vpn.sh'
+alias cpf="xclip -selection c <"
+alias vpn="sudo ./.config/scripts/vpn.sh"
+alias updot="git cmp "Update"; echo Dotfiles repo pushed"
 
 eval "$(starship init zsh)"
