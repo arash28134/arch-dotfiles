@@ -105,7 +105,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # rofi applauncher
-bindsym $mod+q exec --no-startup-id "~/.config/rofi/launchers/type-4/launcher.sh"
+bindsym $mod+q exec --no-startup-id "~/.config/rofi/launchers/type-4/launcher.sh" 
 # rofi powermenu
 bindsym $mod+0 exec --no-startup-id "~/.config/rofi/powermenu/type-4/powermenu.sh"
 
