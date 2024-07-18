@@ -110,8 +110,8 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+q exec --no-startup-id "i3-dmenu-desktop --dmenu='dmenu -i -nb '#1f222d' -nf '#81a1c1' -sb '#81a1c1' -sf '#1f222d' -fn 'OperatorMonoBook:bold:pixelsize=15''"
 
 bindsym $mod+a exec --no-startup-id brave
+bindsym $mod+x exec --no-startup-id spotify-launcher
 bindsym $mod+d exec --no-startup-id discord
-bindsym $mod+x exec --no-startup-id "env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --uri=%U"
 bindsym $mod+z exec --no-startup-id nemo
 bindsym $mod+period exec --no-startup-id "alacritty -e nvim"
 bindsym $mod+t exec --no-startup-id telegram-desktop
