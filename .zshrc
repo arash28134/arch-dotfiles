@@ -105,4 +105,6 @@ source $ZSH/oh-my-zsh.sh
 alias cpf="xclip -selection c <"
 alias vpn="sudo ./.config/scripts/vpn.sh"
 
+export PATH=$HOME/.config/rofi/scripts:$PATH
+
 eval "$(starship init zsh)"

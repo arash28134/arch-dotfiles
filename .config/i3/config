@@ -104,10 +104,10 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the first scratchpad window
 bindsym $mod+minus scratchpad show
 
-# start dmenu
-# bindsym $mod+q exec --no-startup-id dmenu_run -i -nb '#1f222d' -nf '#81a1c1' -sb '#81a1c1' -sf '#1f222d' -fn 'OperatorMonoBook:bold:pixelsize=16'
-# start i3-dmenu-desktop
-bindsym $mod+q exec --no-startup-id "i3-dmenu-desktop --dmenu='dmenu -i -nb '#1f222d' -nf '#81a1c1' -sb '#81a1c1' -sf '#1f222d' -fn 'OperatorMonoBook:bold:pixelsize=15''"
+# rofi applauncher
+bindsym $mod+q exec --no-startup-id "~/.config/rofi/launchers/type-4/launcher.sh"
+# rofi powermenu
+bindsym $mod+0 exec --no-startup-id "~/.config/rofi/powermenu/type-4/powermenu.sh"
 
 bindsym $mod+a exec --no-startup-id brave
 bindsym $mod+x exec --no-startup-id spotify-launcher
