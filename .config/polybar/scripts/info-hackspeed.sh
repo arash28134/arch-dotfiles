@@ -6,7 +6,7 @@ KEYBOARD_ID="SZH USB Keyboard"
 # cpm: characters per minute
 # wpm: words per minute (1 word = 5 characters)
 METRIC=cpm
-FORMAT=" %d $METRIC"
+FORMAT="%d $METRIC"
 
 INTERVAL=5
 
