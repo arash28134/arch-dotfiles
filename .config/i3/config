@@ -213,4 +213,4 @@ smart_gaps on
 exec --no-startup-id picom
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id /home/viper/.config/scripts/setup_keyboard.sh 
-exec --no-startup-id /home/viper/.config/polybar/launch.sh 
+exec --no-startup-id /home/viper/.config/polybar/scripts/launch.sh 
