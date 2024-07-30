@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Aliases
 alias cpf="xclip -selection c <"
-alias vpn="sudo ./.config/scripts/vpn.sh"
+alias vpn="sudo ./.config/specific-scripts/vpn.sh"
 
 export PATH=$HOME/.config/rofi/scripts:$PATH
 
