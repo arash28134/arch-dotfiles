@@ -4,19 +4,11 @@ return {
 		config = function()
 			require("onedarkpro").setup({
 				options = {
-					transparency = false,
+					transparency = true,
 				}
 			})
 
 			vim.cmd("colorscheme onedark")
 		end
 	},
-	{
-		"nvimdev/dashboard-nvim",
-		dependencies = { {'nvim-tree/nvim-web-devicons'}},
-		event = 'VimEnter',
-		config = function()
-			require('dashboard').setup()
-		end
-	}
 }
