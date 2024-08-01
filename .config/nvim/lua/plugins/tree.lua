@@ -12,5 +12,5 @@ return {
 		vim.keymap.set("n", "<leader>t", function()
 			api.tree.toggle({ path = "", find_file = false, update_root = false, focus = true })
 		end, mapping_opts)
-	end
+	end,
 }

@@ -15,7 +15,7 @@ return {
 		end,
 	},
 	{
-		'numToStr/Comment.nvim',
+		"numToStr/Comment.nvim",
 		config = function()
 			require("Comment").setup()
 		end,
@@ -28,14 +28,14 @@ return {
 				exclude = {
 					filetypes = {
 						"dashboard",
-					}
-				}
+					},
+				},
 			})
 		end,
 	},
 	{
 		"HiPhish/rainbow-delimiters.nvim",
-		dependencies = {'nvim-treesitter/nvim-treesitter'},
+		dependencies = { "nvim-treesitter/nvim-treesitter" },
 		config = function()
 			require("rainbow-delimiters.setup").setup()
 		end,
@@ -45,8 +45,8 @@ return {
 		config = function()
 			require("lualine").setup({
 				options = {
-					theme = 'onedark',
-				}
+					theme = "onedark",
+				},
 			})
 		end,
 	},
@@ -55,5 +55,5 @@ return {
 		config = function()
 			require("hex").setup()
 		end,
-	}
+	},
 }

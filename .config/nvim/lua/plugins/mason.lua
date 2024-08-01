@@ -3,22 +3,22 @@ return {
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
-		end
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					'pyright',
-					'clangd',
-					'html',
-					'cssls',
-					'lua_ls',
-					'jsonls',
-				}
+					"pyright",
+					"clangd",
+					"html",
+					"cssls",
+					"lua_ls",
+					"jsonls",
+				},
 			})
-		end
+		end,
 	},
 	{
 		"jay-babu/mason-nvim-dap.nvim",
@@ -28,8 +28,8 @@ return {
 					"python",
 					"cpptools",
 				},
-				handlers = {}
+				handlers = {},
 			})
-		end
-	}
+		end,
+	},
 }
