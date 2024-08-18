@@ -104,6 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias cpf="xclip -selection c <"
 alias vpn="sudo ./.config/specific-scripts/vpn.sh"
+alias syu="yay -Syu"
+alias s="yay -S --needed"
+alias n="yay -Rns"
 
 export PATH=$HOME/.config/rofi/scripts:$PATH
 
