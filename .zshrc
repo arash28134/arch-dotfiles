@@ -64,9 +64,9 @@ ZSH_THEME=""
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
-  zsh-autosuggestions
-  zsh-syntax-highlighting
+   git
+   zsh-autosuggestions
+   zsh-syntax-highlighting
 )      
 
 # Preferred editor for local and remote sessions
@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias cpf="xclip -selection c <"
 alias vpn="sudo ./.config/specific-scripts/vpn.sh"
 alias syu="yay -Syu"
+alias sy="yay -Sy"
 alias s="yay -S --needed"
 alias n="yay -Rns"
 
