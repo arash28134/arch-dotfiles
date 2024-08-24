@@ -102,13 +102,14 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # Aliases
+
+path+=('/home/viper/.config/specific-scripts/')
+path+=('/home/viper/.config/rofi/scripts/')
+
 alias cpf="xclip -selection c <"
-alias vpn="sudo ./.config/specific-scripts/vpn.sh"
 alias syu="yay -Syu"
 alias sy="yay -Sy"
 alias s="yay -S --needed"
 alias n="yay -Rns"
-
-export PATH=$HOME/.config/rofi/scripts:$PATH
 
 eval "$(starship init zsh)"
