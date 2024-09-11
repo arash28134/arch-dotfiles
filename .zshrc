@@ -111,5 +111,6 @@ alias syu="yay -Syu"
 alias sy="yay -Sy"
 alias s="yay -S --needed"
 alias n="yay -Rns"
+alias ssh="kitten ssh"
 
 eval "$(starship init zsh)"
