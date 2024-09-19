@@ -23,6 +23,19 @@ window#waybar.hidden {
     color: transparent;
 	background: transparent;
 }
+
+#language {
+	margin-top: 6px;
+	margin-left: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 0px;
+	border-radius: 10px;
+	transition: none;
+	color: #161320;
+	background: #E8A2AF;
+}
+
 #workspaces {
 	margin-top: 6px;
 	margin-left: 12px;
@@ -50,8 +63,9 @@ window#waybar.hidden {
 
 #workspaces button.active {
 	color: #ABE9B3;
-    border-top: 2px solid #ABE9B3;
-    border-bottom: 2px solid #ABE9B3;
+    border-top: 4px solid #ABE9B3;
+    border-bottom: 4px solid #ABE9B3;
+    border-radius: 8px;
 }
 
 #workspaces button:hover {

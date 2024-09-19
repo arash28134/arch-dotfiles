@@ -3,7 +3,7 @@
 	"output": "HDMI-A-1",
 	"modules-left": ["custom/launcher","cpu","memory","network","custom/media","tray"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/updates","pulseaudio","clock","custom/power"],
+	"modules-right": ["custom/updates","hyprland/language","pulseaudio","clock","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -20,6 +20,11 @@
 		"format": "{icon}",
 		"all-outputs": true,
     },
+    "hyprland/language": {
+	    	"format": "{}",
+		"format-eu": "EN",
+		"format-fa": "FA"
+    },
 	"network": {
 		"tooltip": false,
 		"format-wifi": "  {essid}",
@@ -34,7 +39,7 @@
     },
     "cpu": {
         "interval": 15,
-        "format": " {}%",
+        "format": "  {}%",
         "max-length": 10
     },
     "memory": {
@@ -67,7 +72,6 @@
     "custom/updates":{
         "format": "{} Update(s)",
         "exec": "checkupdates | wc -l",
-        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
         "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
     }
