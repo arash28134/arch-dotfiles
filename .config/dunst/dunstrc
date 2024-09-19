@@ -1,16 +1,20 @@
 [global]
-frame_color = "#96CDFB"
-separator_color= frame
+	frame_color = "#96CDFB"
+	separator_color = frame
+	corner_radius = 5
+	mouse_left_click = close_current
+	mouse_middle_click = do_action
+	mouse_right_click = close_all
 
 [urgency_low]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
+	background = "#1E1E2E"
+	foreground = "#D9E0EE"
 
 [urgency_normal]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
+	background = "#1E1E2E"
+	foreground = "#D9E0EE"
 
 [urgency_critical]
-background = "#1E1E2E"
-foreground = "#D9E0EE"
-frame_color = "#F8BD96"
+	background = "#1E1E2E"
+	foreground = "#D9E0EE"
+	frame_color = "#F8BD96"

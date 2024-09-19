@@ -57,7 +57,7 @@
     },
     "custom/launcher":{
         "format": " ",
-        "on-click": "wofi -show drun",
+        "on-click": "wofi",
         "on-click-right": "killall wofi"
     },
     "custom/power":{
