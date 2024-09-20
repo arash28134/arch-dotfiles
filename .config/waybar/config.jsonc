@@ -1,9 +1,9 @@
 {
 	"layer": "top",
 	"output": "HDMI-A-1",
-	"modules-left": ["custom/launcher","cpu","memory","network","custom/media","tray"],
+	"modules-left": ["custom/launcher","cpu","memory","network","custom/media"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["custom/updates","hyprland/language","pulseaudio","clock","custom/power"],
+	"modules-right": ["tray","custom/updates","hyprland/language","pulseaudio","clock","custom/power"],
 	
 	"pulseaudio": {
 		"tooltip": false,
@@ -48,13 +48,13 @@
         "max-length": 10
     },
     "custom/media": {
-        "interval": 30,
-        "format": "{icon} {}",
+//        "interval": 3,    seems to break stuff
+        "format": "{icon} {0}",
         "return-type": "json",
-        "max-length": 20,
+        "max-length": 30,
         "format-icons": {
-            "spotify": " ",
-            "default": " "
+            "spotify": "",
+            "default": ""
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
@@ -71,8 +71,8 @@
     },
     "custom/updates":{
         "format": "{} Update(s)",
-        "exec": "checkupdates | wc -l",
-        "interval": 15,
-        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
+        "exec": "echo $(($(checkupdates | wc -l) + $(yay -Qua | wc -l)))",
+        "interval": 600,			// every 10 minutes
+        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated'"
     }
 }
