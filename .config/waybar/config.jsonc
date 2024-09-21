@@ -9,7 +9,7 @@
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
-		"format-muted": "{icon} {volume}%",
+		"format-muted": "",
 		"on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
 		"format-icons": {
 			"default": ["", "", ""]
@@ -35,16 +35,16 @@
 		"spacing": 10
 	},
     "clock": {
-        "format": " {:%I:%M %p   %m/%m/%Y}"
+        "format": " {:%I:%M %p   %m/%d/%Y}"
     },
     "cpu": {
         "interval": 15,
-        "format": "  {}%",
+        "format": "  {usage}%",
         "max-length": 10
     },
     "memory": {
         "interval": 30,
-        "format": "  {}%",
+        "format": "  {percentage}%",
         "max-length": 10
     },
     "custom/media": {
