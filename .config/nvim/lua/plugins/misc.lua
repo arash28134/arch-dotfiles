@@ -1,10 +1,10 @@
 return {
 	{
-		"andweeb/presence.nvim",
+		'vyfor/cord.nvim',
+		build = './build || .\\build',
+  		event = 'VeryLazy',
 		config = function()
-			require("presence").setup({
-				main_image = "file",
-				buttons = false,
+			require("cord").setup({
 			})
 		end,
 	},
